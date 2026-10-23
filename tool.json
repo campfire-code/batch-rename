@@ -1,0 +1,16 @@
+{
+  "id": "o12",
+  "slug": "batch-rename",
+  "name": "按表格批量改文件名",
+  "version": "0.1.0",
+  "repo": "campfire-code/batch-rename",
+  "license": "MIT",
+  "ui": {
+    "layout": "b",
+    "palette": "amber"
+  },
+  "upstream": {
+    "repo": "ayoisaiah/f2",
+    "license": "MIT"
+  }
+}
