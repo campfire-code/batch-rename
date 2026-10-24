@@ -237,7 +237,7 @@ export async function applyRenames(dir: string, pairs: { from: string; to: strin
   // cur：每个待改项现在实际叫什么名字（可能是临时名）
   const pending = pairs.map((p) => ({ ...p, cur: p.from }));
   const occupied = async (name: string) => fs.exists(await fs.join(dir, name));
-  const tmpName = (i: number) => `.改名中-${Date.now().toString(36)}-${i}.tmp`;
+  const tmpName = (i: number) => `.改名中-${Date.now().toString(36)}-${i}.暂存`;
   let tmpSeq = 0;
   const step = () => onStep?.(report.done.length + report.failed.length);
 

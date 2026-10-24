@@ -124,7 +124,7 @@ describe('执行与撤销', () => {
     expect(files.get('b.txt')).toBe('内容:a.txt');
     expect(files.get('d.txt')).toBe('内容:c.txt');
     expect(files.get('X.txt')).toBe('内容:x.txt');
-    expect([...files.keys()].filter((k) => k.endsWith('.tmp'))).toEqual([]);
+    expect([...files.keys()].filter((k) => k.endsWith('.暂存'))).toEqual([]);
     await undo(r.recordPath!, ops);
     for (const n of ['a', 'b', 'c', 'x']) expect(files.get(`${n}.txt`)).toBe(`内容:${n}.txt`);
   });

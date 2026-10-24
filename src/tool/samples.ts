@@ -16,7 +16,7 @@ const pairs: [string, string][] = [
 ];
 
 export const SAMPLE = {
-  folder: '/Users/demo/Pictures/门店巡检照片（示例）',
+  folder: 'D:\\门店资料\\门店巡检照片（示例）',
   files,
   mapping: {
     name: '巡检照片改名对照（示例）.xlsx',
